@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1050.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.locationproject.UserlogController">
+   <AnchorPane fx:id="reservationlist" prefHeight="150.0" prefWidth="200.0" AnchorPane.leftAnchor="250.0" AnchorPane.topAnchor="148.0">
+      <children>
+         <fx:include source="ReservationList.fxml" />
+      </children>
+   </AnchorPane>
+   <AnchorPane fx:id="reserverclient" prefHeight="150.0" prefWidth="200.0" AnchorPane.leftAnchor="250.0" AnchorPane.topAnchor="156.0">
+      <children>
+         <fx:include source="resarvationclient.fxml" />
+      </children>
+   </AnchorPane>
+  <Pane layoutX="-2.0" prefHeight="145.0" prefWidth="1062.0" styleClass="head-background" stylesheets="@../styles/Styles.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="nomcmp" layoutX="224.0" layoutY="47.0" textFill="WHITE">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="227.0" layoutY="100.0" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="842.0" layoutY="62.0" nodeOrientation="RIGHT_TO_LEFT" onAction="#editProfil" prefHeight="30.0" prefWidth="163.0" ripplerFill="WHITE" style="-fx-background-color: #473E98;" styleClass="cursor_hand" stylesheets="@../styles/Styles.css" text="EDIT PROFILE" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+      <ImageView fitHeight="112.0" fitWidth="128.0" layoutX="74.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/prof.png" />
+         </image>
+      </ImageView>
+         </children>
+      </Pane>
+      <VBox layoutX="-1.0" layoutY="145.0" prefHeight="438.0" prefWidth="252.0" style="-fx-background-color: #ffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="146.0">
+         <children>
+            <Label prefHeight="30.0" prefWidth="252.0" text="Espace Client" textFill="#171717">
+               <font>
+                  <Font name="Hanging Tree" size="22.0" />
+               </font>
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets top="60.0" />
+               </VBox.margin>
+            </Label>
+            <JFXButton alignment="BASELINE_LEFT" graphicTextGap="10.0" onAction="#reservationlistbtn" prefHeight="43.0" prefWidth="252.0" ripplerFill="#bfadf8" styleClass="hover_border" stylesheets="@../styles/Styles.css" text="Mes Reservations" textFill="#5b5858">
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <graphic>
+                  <ImageView accessibleText="Project List" fitHeight="16.0" fitWidth="144.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/home.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" graphicTextGap="10.0" onAction="#reservationbtn" prefHeight="43.0" prefWidth="252.0" ripplerFill="#bfadf8" styleClass="hover_border" stylesheets="@../styles/Styles.css" text=" Reserver" textFill="#5b5858">
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/reservation.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </JFXButton>
+              <JFXButton alignment="BASELINE_LEFT" graphicTextGap="10.0" prefHeight="43.0" prefWidth="252.0" ripplerFill="#bfadf8" styleClass="hover_border" stylesheets="@../styles/Styles.css" text="Parametres" textFill="#5b5858">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <graphic>
+                  <ImageView accessibleText="Project List" fitHeight="16.0" fitWidth="144.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/parametre.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            <VBox.margin>
+               <Insets top="25.0" />
+            </VBox.margin>
+            </JFXButton>
+         </children>
+      </VBox>
+   </AnchorPane>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="627.0" prefWidth="424.0" styleClass="root" stylesheets="@../styles/Styles.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.locationproject.EditprofileController">
+   <center>
+      <VBox alignment="TOP_CENTER" prefHeight="555.0" prefWidth="328.0" styleClass="input-field-blue" stylesheets="@../styles/Styles.css" BorderPane.alignment="CENTER">
+         <children>
+            <JFXTextField fx:id="nom" focusColor="#514f4f" labelFloat="true" prefHeight="59.0" prefWidth="330.0" promptText="Nom">
+               <VBox.margin>
+                  <Insets bottom="6.0" left="6.0" right="6.0" top="24.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="9.0" left="20.0" right="22.0" top="20.0" />
+               </padding>
+               <unFocusColor>
+                  <LinearGradient cycleMethod="REFLECT" endX="0.9182692307692307" endY="0.4182692307692307" startX="0.889423076923077" startY="0.5576923076923077">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </unFocusColor>
+            </JFXTextField>
+            <JFXTextField fx:id="prenom" focusColor="#514f4f" labelFloat="true" prefHeight="59.0" prefWidth="35.0" promptText="Prenom">
+               <VBox.margin>
+                  <Insets bottom="6.0" left="6.0" right="6.0" top="24.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="9.0" left="20.0" right="22.0" top="20.0" />
+               </padding>
+               <unFocusColor>
+                  <LinearGradient cycleMethod="REFLECT" endX="0.9182692307692307" endY="0.4182692307692307" startX="0.889423076923077" startY="0.5576923076923077">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </unFocusColor>
+            </JFXTextField>
+            <JFXTextField fx:id="cin" focusColor="#514f4f" labelFloat="true" prefHeight="59.0" prefWidth="35.0" promptText="CIN">
+               <VBox.margin>
+                  <Insets bottom="6.0" left="6.0" right="6.0" top="24.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="9.0" left="20.0" right="22.0" top="20.0" />
+               </padding>
+               <unFocusColor>
+                  <LinearGradient cycleMethod="REFLECT" endX="0.9182692307692307" endY="0.4182692307692307" startX="0.889423076923077" startY="0.5576923076923077">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </unFocusColor>
+            </JFXTextField>
+            <JFXTextField fx:id="adresse" focusColor="#514f4f" labelFloat="true" prefHeight="59.0" prefWidth="35.0" promptText="Adresse">
+               <VBox.margin>
+                  <Insets bottom="6.0" left="6.0" right="6.0" top="24.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="9.0" left="20.0" right="22.0" top="20.0" />
+               </padding>
+               <unFocusColor>
+                  <LinearGradient cycleMethod="REFLECT" endX="0.9182692307692307" endY="0.4182692307692307" startX="0.889423076923077" startY="0.5576923076923077">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </unFocusColor>
+            </JFXTextField>
+            <JFXTextField fx:id="numt" focusColor="#514f4f" labelFloat="true" prefHeight="59.0" prefWidth="183.0" promptText="Numero de telephone">
+               <padding>
+                  <Insets bottom="9.0" left="20.0" right="22.0" top="20.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="6.0" left="6.0" right="6.0" top="24.0" />
+               </VBox.margin>
+               <unFocusColor>
+                  <LinearGradient cycleMethod="REFLECT" endX="0.9182692307692307" endY="0.4182692307692307" startX="0.889423076923077" startY="0.5576923076923077">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </unFocusColor>
+            </JFXTextField>
+            <JFXButton alignment="CENTER" onAction="#EditProfile" prefHeight="27.0" prefWidth="170.0" stylesheets="@../styles/Styles.css" text="Confirmer">
+               <VBox.margin>
+                  <Insets bottom="1.0" left="132.0" right="2.0" top="29.0" />
+               </VBox.margin>
+               <styleClass>
+                  <String fx:value="loginBtn" />
+                  <String fx:value="cursor_hand" />
+               </styleClass>
+            </JFXButton>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="11.0" right="11.0" top="-17.0" />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+   <left>
+      <Pane prefHeight="505.0" prefWidth="43.0" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <Pane prefHeight="501.0" prefWidth="46.0" BorderPane.alignment="TOP_RIGHT" />
+   </right>
+   <top>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="Edit Profile" wrappingWidth="202.32666015625">
+               <font>
+                  <Font name="Newtype" size="33.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="26.0" left="20.0" right="22.0" top="30.0" />
+               </HBox.margin>
+            </Text>
+            <ImageView fitHeight="80.0" fitWidth="93.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/editprofile.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="80.0" top="9.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>

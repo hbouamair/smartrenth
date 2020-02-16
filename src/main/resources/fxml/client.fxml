@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="485.0" prefWidth="801.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.locationproject.ClientController">
+   <children>
+      <BorderPane fx:id="clients" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
+         <top>
+            <Pane prefHeight="191.0" prefWidth="783.0" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXButton layoutX="622.0" layoutY="82.0" onAction="#newclient" prefHeight="27.0" prefWidth="143.0" style="-fx-background-color: #473E98;" stylesheets="@../styles/Styles.css" text="Ajouter Client" textFill="WHITE">
+                     <padding>
+                        <Insets top="1.0" />
+                     </padding>
+                     <styleClass>
+                        <String fx:value="title" />
+                        <String fx:value="cursor_hand" />
+                     </styleClass>
+                  </JFXButton>
+                  <Label alignment="CENTER" layoutX="38.0" layoutY="21.0" prefHeight="51.0" prefWidth="119.0" styleClass="title" stylesheets="@../styles/Styles.css" text="Clients">
+                     <font>
+                        <Font name="Impact" size="39.0" />
+                     </font>
+                  </Label>
+               </children>
+               <BorderPane.margin>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </BorderPane.margin>
+               <padding>
+                  <Insets bottom="-12.0" left="3.0" right="10.0" top="-9.0" />
+               </padding>
+            </Pane>
+         </top>
+         <center>
+            <Pane prefHeight="393.0" prefWidth="783.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TableView fx:id="tableclient" layoutX="-10.0" layoutY="1.0" prefHeight="284.0" prefWidth="800.0" stylesheets="@../styles/Styles.css">
+                     <columns>
+                        <TableColumn prefWidth="31.0" text="N" />
+                        <TableColumn id="nom" prefWidth="152.0" text="Nom " />
+                        <TableColumn id="prenom" prefWidth="147.0" text="Prenom" />
+                        <TableColumn id="cin" minWidth="2.0" prefWidth="78.0" text="Cin" />
+                        <TableColumn id="Adresse" prefWidth="208.0" text="Adresse" />
+                        <TableColumn id="Ntel" prefWidth="183.0" text="N.Tel" />
+                     </columns>
+                  </TableView>
+               </children>
+            </Pane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

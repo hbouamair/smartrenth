@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="651.0" prefWidth="445.0" styleClass="root" stylesheets="@../styles/Styles.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.locationproject.AjouterClientController">
+   <center>
+      <VBox alignment="TOP_CENTER" prefHeight="482.0" prefWidth="349.0" styleClass="input-field-blue" stylesheets="@../styles/Styles.css" BorderPane.alignment="CENTER">
+         <children>
+            <JFXTextField fx:id="nom" focusColor="#000000a6" labelFloat="true" prefHeight="59.0" prefWidth="330.0" promptText="Nom" unFocusColor="#0000005e">
+               <VBox.margin>
+                  <Insets bottom="6.0" left="6.0" right="6.0" top="20.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="9.0" left="20.0" right="22.0" top="20.0" />
+               </padding>
+            </JFXTextField>
+            <JFXTextField fx:id="prenom" focusColor="BLACK" labelFloat="true" prefHeight="59.0" prefWidth="35.0" promptText="Prenom" unFocusColor="BLACK">
+               <VBox.margin>
+                  <Insets bottom="6.0" left="6.0" right="6.0" top="20.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="9.0" left="20.0" right="22.0" top="20.0" />
+               </padding>
+            </JFXTextField>
+            <JFXTextField fx:id="cin" focusColor="#b5b4b4" labelFloat="true" prefHeight="59.0" prefWidth="35.0" promptText="Cin" unFocusColor="BLACK">
+               <VBox.margin>
+                  <Insets bottom="6.0" left="6.0" right="6.0" top="20.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="9.0" left="20.0" right="22.0" top="20.0" />
+               </padding>
+            </JFXTextField>
+            <JFXTextField fx:id="adresse" focusColor="#b5b4b4" labelFloat="true" prefHeight="59.0" prefWidth="35.0" promptText="Adresse" unFocusColor="BLACK">
+               <VBox.margin>
+                  <Insets bottom="6.0" left="6.0" right="6.0" top="20.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="9.0" left="20.0" right="22.0" top="20.0" />
+               </padding>
+            </JFXTextField>
+            <JFXTextField fx:id="numt" focusColor="#b5b4b4" labelFloat="true" prefHeight="59.0" prefWidth="35.0" promptText="Numero de telephone" unFocusColor="BLACK">
+               <VBox.margin>
+                  <Insets bottom="6.0" left="6.0" right="6.0" top="20.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="9.0" left="20.0" right="22.0" top="20.0" />
+               </padding>
+            </JFXTextField>
+            <JFXButton alignment="CENTER" onAction="#ajoutclient" prefHeight="27.0" prefWidth="170.0" stylesheets="@../styles/Styles.css" text="Ajouter">
+               <VBox.margin>
+                  <Insets bottom="1.0" left="132.0" right="2.0" top="27.0" />
+               </VBox.margin>
+               <styleClass>
+                  <String fx:value="loginBtn" />
+                  <String fx:value="cursor_hand" />
+               </styleClass>
+            </JFXButton>
+            <ImageView fitHeight="46.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/newclient.png" />
+               </image>
+               <VBox.margin>
+                  <Insets left="-245.0" top="-45.0" />
+               </VBox.margin>
+            </ImageView>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="11.0" left="11.0" right="11.0" top="-8.0" />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+   <left>
+      <Pane prefHeight="501.0" prefWidth="50.0" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <Pane prefHeight="501.0" prefWidth="53.0" BorderPane.alignment="TOP_RIGHT" />
+   </right>
+   <bottom>
+      <HBox prefHeight="50.0" prefWidth="445.0" BorderPane.alignment="CENTER" />
+   </bottom>
+   <top>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="New Client" wrappingWidth="202.32666015625">
+               <font>
+                  <Font name="Newtype" size="33.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="26.0" left="20.0" right="22.0" top="30.0" />
+               </HBox.margin>
+            </Text>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>

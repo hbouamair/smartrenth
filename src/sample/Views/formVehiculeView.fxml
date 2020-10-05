@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="../styles/Styles.css"
+            xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="sample.Controllers.FormVehiculeView">
+    <children>
+        <GridPane layoutX="96.0" layoutY="78.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="30.0" prefWidth="200.0"/>
+            </columnConstraints>
+
+            <children>
+                <Label text="Matricule" GridPane.columnIndex="0" GridPane.rowIndex="0">
+                    <GridPane.margin>
+                        <Insets bottom="5.0" right="5.0" top="5.0"/>
+                    </GridPane.margin>
+                </Label>
+                <TextField fx:id="matriculeField" GridPane.columnIndex="1" GridPane.rowIndex="0">
+                    <GridPane.margin>
+                        <Insets bottom="5.0" right="5.0" top="5.0"/>
+                    </GridPane.margin>
+                </TextField>
+
+                <Label text="Couleur" GridPane.columnIndex="0" GridPane.rowIndex="1">
+                    <GridPane.margin>
+                        <Insets bottom="5.0" right="5.0" top="5.0"/>
+                    </GridPane.margin>
+                </Label>
+                <TextField fx:id="couleurField" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                    <GridPane.margin>
+                        <Insets bottom="5.0" right="5.0" top="5.0"/>
+                    </GridPane.margin>
+                </TextField>
+
+                <Label text="Modelle" GridPane.columnIndex="0" GridPane.rowIndex="2">
+                    <GridPane.margin>
+                        <Insets bottom="5.0" right="5.0" top="5.0"/>
+                    </GridPane.margin>
+                </Label>
+                <TextField fx:id="modelleField" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                    <GridPane.margin>
+                        <Insets bottom="5.0" right="5.0" top="5.0"/>
+                    </GridPane.margin>
+                </TextField>
+
+                <Label text="Marque" GridPane.columnIndex="0" GridPane.rowIndex="3">
+                    <GridPane.margin>
+                        <Insets bottom="5.0" right="5.0" top="5.0"/>
+                    </GridPane.margin>
+                </Label>
+                <TextField fx:id="marqueField" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                    <GridPane.margin>
+                        <Insets bottom="5.0" right="5.0" top="5.0"/>
+                    </GridPane.margin>
+                </TextField>
+
+                <Label text="Carburant" GridPane.columnIndex="0" GridPane.rowIndex="4">
+                    <GridPane.margin>
+                        <Insets bottom="5.0" right="5.0" top="5.0"/>
+                    </GridPane.margin>
+                </Label>
+                <TextField fx:id="carburantField" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                    <GridPane.margin>
+                        <Insets bottom="5.0" right="5.0" top="5.0"/>
+                    </GridPane.margin>
+                </TextField>
+
+                <Label text="Prix Par Jour" GridPane.columnIndex="0" GridPane.rowIndex="5">
+                    <GridPane.margin>
+                        <Insets bottom="5.0" right="5.0" top="5.0"/>
+                    </GridPane.margin>
+                </Label>
+                <TextField fx:id="prixField" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                    <GridPane.margin>
+                        <Insets bottom="5.0" right="5.0" top="5.0"/>
+                    </GridPane.margin>
+                </TextField>
+
+                <Label text="Kilometrage" GridPane.columnIndex="0" GridPane.rowIndex="6">
+                    <GridPane.margin>
+                        <Insets bottom="5.0" right="5.0" top="5.0"/>
+                    </GridPane.margin>
+                </Label>
+                <TextField fx:id="kilometrageField" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                    <GridPane.margin>
+                        <Insets bottom="5.0" right="5.0" top="5.0"/>
+                    </GridPane.margin>
+                </TextField>
+
+
+            </children>
+            <rowConstraints>
+                <RowConstraints/>
+                <RowConstraints/>
+                <RowConstraints/>
+                <RowConstraints/>
+                <RowConstraints/>
+                <RowConstraints/>
+                <RowConstraints/>
+            </rowConstraints>
+        </GridPane>
+        <Label layoutX="109.0" layoutY="29.0" text="Ajouter Vehicule " textFill="#000000ef">
+            <font>
+                <Font name="Consolas" size="20.0"/>
+            </font>
+        </Label>
+        <Button layoutX="513.0" layoutY="355.0" mnemonicParsing="false" onAction="#save" styleClass="button1"
+                stylesheets="@../styles/Styles.css" text="OK"/>
+        <Button layoutX="453.0" layoutY="355.0" mnemonicParsing="false" onAction="#cancel" styleClass="buttonCancel"
+                stylesheets="@../styles/Styles.css" text="anuller"/>
+    </children>
+</AnchorPane>
